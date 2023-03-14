@@ -27,12 +27,13 @@ $colors: (
     font-weight: 700;
 }
 
-.w-100 img {
+.w-100, .w-100 img {
     width: 100%;
 }
 
 body {
     font-family: 'Karla', sans-serif;
+    font-size: 1.2rem;
     color: $dark;
     background-color: $light;
     box-sizing: border-box;
@@ -40,5 +41,6 @@ body {
 
 main {
     width: 85vw;
-    margin: 0px auto;
+    margin: 10vw auto;
+    position: relative;
 }

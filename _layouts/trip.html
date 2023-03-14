@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<main>
+
     <div class="top">
         <h1>{{ page.location }}</h1>
         {{ page.year }}
@@ -13,8 +13,8 @@ layout: default
         <!--IMAGE-->
         {% if asset._type == "hero" %}
             <div class="hero">
-                <img src="{{asset.image}}" alt="{{asset.image_alt}} " class="w-100">
-                <div class="caption">{{asset.caption}}</div>
+                <img src="{{ asset.image }}" alt="{{ asset.image_alt }} " class="w-100">
+                <div class="caption content">{{ asset.caption }}</div>
             </div>
         {% endif %}
 
@@ -24,6 +24,9 @@ layout: default
 
         <!--TEXT-->
         {% if asset._type == "text" %}
+            <div class="content">
+                <p>{{ asset.text }}</p>
+            </div>
 
         {% endif %}
 
@@ -39,4 +42,3 @@ layout: default
 
     {% endfor %}
     
-</main>
