@@ -4,35 +4,35 @@ layout: default
 
 <main>
 
-{% for asset in page.modules %}
+    {% for asset in page.modules %}
 
-    <!--IMAGE-->
-    {% if asset._type = "hero" %}
-        <div class="hero">
-            <img src="{{asset.image}}" alt=""{{asset.image}} class="w-100">
-            {{asset.caption}}
-        </div>
-    {% endif %}
+        <!--IMAGE-->
+        {% if asset._type == "hero" %}
+            <div class="hero">
+                <img src="{{asset.image}}" alt="{{asset.image_alt}} " class="w-100">
+                {{asset.caption}}
+            </div>
+        {% endif %}
 
-    {% if asset._type == "image" %}
+        {% if asset._type == "image" %}
 
-    {% endif %}
+        {% endif %}
 
-     <!--TEXT-->
-    {% if asset._type == "text" %}
+        <!--TEXT-->
+        {% if asset._type == "text" %}
 
-    {% endif %}
+        {% endif %}
 
-     <!--SUBHEADING-->
-    {% if asset._type == "subheading" %}
+        <!--SUBHEADING-->
+        {% if asset._type == "subheading" %}
 
-    {% endif %}
+        {% endif %}
 
-     <!--LIST-->
-    {% if asset._type == "list" %}
+        <!--LIST-->
+        {% if asset._type == "list" %}
 
-    {% endif %}
+        {% endif %}
 
-{% endfor %}
+    {% endfor %}
     
 </main>
