@@ -38,7 +38,6 @@ plugins:
 collections:
   trips:
     output: true
-    permalink: /bon/:collection/:name
 
 # defaults:
 #  - scope:
