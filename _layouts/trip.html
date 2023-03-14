@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<main>
+
+{% for asset in page.modules %}
+
+    <!--IMAGE-->
+    {% if asset._type = "hero" %}
+        <div class="hero">
+            <img src="{{asset.image}}" alt=""{{asset.image_alt}} class="w-100">
+            {{asset.caption}}
+        </div>
+    {% endif %}
+
+    {% if asset._type == "image" %}
+
+    {% endif %}
+
+     <!--TEXT-->
+    {% if asset._type == "text" %}
+
+    {% endif %}
+
+     <!--SUBHEADING-->
+    {% if asset._type == "subheading" %}
+
+    {% endif %}
+
+     <!--LIST-->
+    {% if asset._type == "list" %}
+
+    {% endif %}
+
+{% endfor %}
+    
+</main>

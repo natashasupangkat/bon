@@ -27,6 +27,10 @@ $colors: (
     font-weight: 700;
 }
 
+.w-100 img {
+    width: 100%;
+}
+
 body {
     font-family: 'Karla', sans-serif;
     color: $dark;
