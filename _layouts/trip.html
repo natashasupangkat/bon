@@ -5,21 +5,27 @@ layout: default
 
     <div class="content top">
         <h1>{{ page.location }}</h1>
-        {{ page.year }}
+        <h3>{{ page.year }}</h3>
     </div>
 
     {% for asset in page.modules %}
 
-        <!--IMAGE-->
+        {% if asset._type == "day" %}
+            <div class="content"><h4>{{ asset.number }}</h4></div>
+        {% endif %}
+
+        <!--HERO-->
         {% if asset._type == "hero" %}
             <div class="hero">
-                <img src="{{ asset.image }}" alt="{{ asset.image_alt }} " class="w-100">
-                <div class="caption content">{{ asset.caption }}</div>
+                <img src="{{ asset.img }}" alt="{{ asset.img_alt }}" class="w-100">
             </div>
         {% endif %}
 
         {% if asset._type == "image" %}
-
+            <div class="content image">
+                <img src="{{ asset.img }}" alt="{{ asset.img_alt }}" class="w-100">
+                <div class="caption content">{{ asset.caption }}</div>
+            </div>
         {% endif %}
 
         <!--TEXT-->
