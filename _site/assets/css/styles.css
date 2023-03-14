@@ -17,3 +17,4 @@ body { font-family: 'Karla', sans-serif; color: #272727; background-color: #fdfd
 main { width: 85vw; margin: 0px auto; }
 
 /*tells Sass to look for a file called main.css in the sass directory (_sass/)*/
+.caption { text-transform: uppercase; font-size: 9px; letter-spacing: 1px; }
