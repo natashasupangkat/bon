@@ -6,9 +6,11 @@ layout: home
 ---
 <main>
     hi there
+    <ul>
     {% for trip in site.trips %}
         <li>
             <h2><a href="{{ site.url }}"{{ site.title }}></a></h2>
         </li>
     {% endfor %}
+    </ul>
 </main>

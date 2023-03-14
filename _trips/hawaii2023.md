@@ -1,6 +1,6 @@
 ---
 layout: trip
-title: lorem ipsum
+title: hawaii 2023
 location: oahu, hawaii, usa
 year: 2023
 month: mar
