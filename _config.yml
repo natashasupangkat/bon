@@ -38,7 +38,7 @@ plugins:
 collections:
   trips:
     output: true
-    permalink: /bon/:path
+    permalink: /bon/:colletion/:path
 
 # defaults:
 #  - scope:
