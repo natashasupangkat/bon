@@ -1,2 +1,40 @@
 // GLOBAL STYLING
 
+// theme colors
+$dark: #272727;
+$light: #fdfdfd;
+
+$colors: (
+    "dark": $dark,
+    "light": $light,
+);
+
+@each $key, $val in $colors {
+    .color-#{$key} {
+        color: $val;
+    }
+
+    .bg-#{$key} {
+        background-color: $val;
+    }
+}
+
+.em {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    color: $dark;
+    background-color: $light;
+    box-sizing: border-box;
+}
+
+main {
+    width: 85vw;
+    margin: 0px auto;
+}
