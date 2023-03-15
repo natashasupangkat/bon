@@ -1,0 +1,13 @@
+// @import "_mixins.scss";
+/*
+@include media-breakpoint-up(md) {
+    .content {
+        width: 85vw;
+    }
+}*/
+
+@media screen and (min-width: 768px) {
+    .content {
+        width: 55vw;
+    }
+}

@@ -20,3 +20,5 @@ main { width: 85vw; margin: 10vw auto; position: relative; }
 .caption { text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; margin-top: 5px !important; text-align: left; }
 
 .content { width: 85vw; margin: 5vw auto; }
+
+@media (min-width: 768px) { .content { width: 55vw; } }
