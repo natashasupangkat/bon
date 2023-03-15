@@ -21,4 +21,8 @@ main { width: 85vw; margin: 10vw auto; position: relative; }
 
 .content { width: 85vw; margin: 5vw auto; }
 
+/*
+@include media-breakpoint-up(md) { .content { width: 85vw; }
+}*/
 @media (min-width: 768px) { .content { width: 55vw; } }
+@media (min-width: 992px) { .content { width: 600px; } }
