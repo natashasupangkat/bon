@@ -3,10 +3,14 @@
 // theme colors
 $dark: #272727;
 $light: #fdfdfd;
+$grey: #eee;
+$dark-grey: #777;
 
 $colors: (
     "dark": $dark,
     "light": $light,
+    "grey": $grey,
+    "dark-grey": $dark-grey,
 );
 
 @each $key, $val in $colors {
@@ -23,12 +27,16 @@ $colors: (
     font-style: italic;
 }
 
-.bold {
+.bold, strong {
     font-weight: 700;
 }
 
 .w-100, .w-100 img {
     width: 100%; 
+}
+
+h4 {
+    font-size: 1.1rem;
 }
 
 body {

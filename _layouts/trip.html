@@ -3,14 +3,19 @@ layout: default
 ---
 
     <div class="content top">
-        <h1>{{ page.location }}</h1>
-        <h3>{{ page.year }}</h3>
+        <h1>{{ page.title }}</h1>
+        <h3 class="tag">{{ page.location }}</h3>
+        <h3 class="tag">{{ page.year }}</h3>
     </div>
 
     {% for asset in page.modules %}
 
         {% if asset._type == "day" %}
-            <div class="content"><h4>{{ asset.number }}</h4></div>
+            <div class="content">
+                <div class="tag bg-grey color-dark">
+                    <strong>{{ asset.number }}</strong>
+                </div>
+            </div>
         {% endif %}
 
         <!--HERO-->
