@@ -22,6 +22,12 @@
     text-transform: uppercase;
 }
 
+.tag {
+    @include tag;
+
+    border: 1px solid #ddd;
+}
+
 .day {
     @include tag;
 

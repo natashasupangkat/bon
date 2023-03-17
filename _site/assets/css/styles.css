@@ -33,6 +33,8 @@ main { width: 85vw; margin: 10vw auto; position: relative; }
 
 .caption { font-size: 0.8rem; letter-spacing: 1px; margin-top: 5px !important; text-align: left; text-transform: uppercase; }
 
+.tag { display: inline; line-height: 20px; height: 20px; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 5px; border-radius: 5px; text-transform: uppercase; border: 1px solid #ddd; }
+
 .day { display: inline; line-height: 20px; height: 20px; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 5px; border-radius: 5px; text-transform: uppercase; border: 1px solid #ddd; margin: 3vw 0px !important; }
 
 /*
