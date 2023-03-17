@@ -11,7 +11,7 @@
 
 .content {
     width: 85vw;
-    margin: 5vw auto;
+    margin: 2vw auto;
 }
 
 .caption {
@@ -22,8 +22,10 @@
     text-transform: uppercase;
 }
 
-.tag {
+.day {
     @include tag;
 
     border: 1px solid #ddd;
+    margin: 3vw 0px !important;
 }
+

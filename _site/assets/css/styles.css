@@ -20,6 +20,8 @@
 
 .w-100, .w-100 img { width: 100%; }
 
+h1 { text-transform: uppercase; letter-spacing: 2px; font-size: 3.0rem; font-weight: bold; }
+
 h4 { font-size: 1.1rem; }
 
 body { font-family: 'Karla', sans-serif; font-size: 0.9rem; color: #272727; background-color: #fdfdfd; box-sizing: border-box; }
@@ -27,11 +29,11 @@ body { font-family: 'Karla', sans-serif; font-size: 0.9rem; color: #272727; back
 main { width: 85vw; margin: 10vw auto; position: relative; }
 
 /*tells Sass to look for a file called main.css in the sass directory (_sass/)*/
-.content { width: 85vw; margin: 5vw auto; }
+.content { width: 85vw; margin: 2vw auto; }
 
 .caption { font-size: 0.8rem; letter-spacing: 1px; margin-top: 5px !important; text-align: left; text-transform: uppercase; }
 
-.tag { display: inline; line-height: 20px; height: 20px; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 5px; border-radius: 5px; text-transform: uppercase; border: 1px solid #ddd; }
+.day { display: inline; line-height: 20px; height: 20px; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 5px; border-radius: 5px; text-transform: uppercase; border: 1px solid #ddd; margin: 3vw 0px !important; }
 
 /*
 @include media-breakpoint-up(md) { .content { width: 85vw; }
